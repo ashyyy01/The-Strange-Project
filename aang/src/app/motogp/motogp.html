@@ -1,0 +1,56 @@
+<div class="searchbar">
+    <button pButton type="button" label="Search" class="ui-button-raised ui-button-danger"
+        style="float: right; margin-top: 20px; margin-left: 5px;" (click)=motogp()></button>
+    <span style="float: right; margin-top: 20px;">
+        <input #input type="text" size="30" pInputText name="search" placeholder="Search Here..."
+            [(ngModel)]="model.ridernum">
+    </span>
+</div>
+<!-- <div> -->
+    <div class="content" style="margin-top: 5px; padding-bottom: 20px; background: url('../road.jpeg');">
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="name" [(ngModel)]="model.name">
+            <label for="float-input">Rider Name</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="age" [(ngModel)]="model.age">
+            <label for="float-input">Age</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="Number" [(ngModel)]="model.number">
+            <label for="float-input">Number</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="Team" [(ngModel)]="model.team">
+            <label for="float-input">Team</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="Bike" [(ngModel)]="model.bike">
+            <label for="float-input">Bike</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="weight" [(ngModel)]="model.weight">
+            <label for="float-input">weight</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="Salary" [(ngModel)]="model.salary">
+            <label for="float-input">Salary</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="class" [(ngModel)]="model.class">
+            <label for="float-input">class</label>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText name="Country" [(ngModel)]="model.country">
+            <label for="float-input">Country</label>
+        </span>
+        <img id='images' [src]='model.image' alt="model.imagename" style="position: absolute;"/>
+
+    </div>
+<!-- </div> -->
+<div class="input">
+    <!-- <img id='images' [src]='model.image'  style="height: 100px; margin-bottom: -45px; width: 308px;" /> -->
+    <input type="file" (change)="onselection($event)" style="margin-left: 10px;"/> 
+    <button pButton type="button" label="Save" class="ui-button-raised ui-button-danger"
+    style="float: right; margin-top: 20px; margin-left: 5px;" (click)=save()></button>
+</div>

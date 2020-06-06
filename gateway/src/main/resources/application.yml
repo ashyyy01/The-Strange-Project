@@ -1,0 +1,11 @@
+ zuul:
+  routes:
+    MotoGP:
+      path: /motogp/**
+      serviceId: MotoGP
+    F1:
+      path: /f1/**
+      serviceId: F1
+    IOMTT:
+      path: /iomtt/**
+      serviceId: IomTT

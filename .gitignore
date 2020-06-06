@@ -1,0 +1,48 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+aang/dist
+aang/tmp
+aang/out-tsc
+# Only exists if Bazel was run
+aang/bazel-out
+
+# dependencies
+aang/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+aang/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+aang/.sass-cache
+aang/connect.lock
+aang/coverage
+aang/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+aang/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+gateway/target/
