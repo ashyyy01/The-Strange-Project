@@ -1,5 +1,5 @@
-The-Strange-Project was started with an idea of creating a micro service architecture implemented application with every 
-service in a different programming/scripting language.
+This project was started with an idea of creating a micro service architecture implemented web-application with every 
+service written in a different programming language.
 
 Its a 3-tier app with Angular 9 client and back-end services written in Java ( 2 services),
             Python (1 service),
